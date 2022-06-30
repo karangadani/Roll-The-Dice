@@ -12,11 +12,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  shake: ^0.1.0
-  awesome_dialog: ^1.2.1
-  fluttertoast: ^7.1.6
-  cupertino_icons: ^1.0.0
-  audioplayers: ^0.13.2
+  shake: ^2.1.0
+  awesome_dialog: ^2.2.1
+  fluttertoast: ^8.0.9
+  cupertino_icons: ^1.0.5
+  audioplayers: ^1.0.1
 
 dev_dependencies:
   flutter_test:

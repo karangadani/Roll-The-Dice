@@ -2,7 +2,6 @@ import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shake/shake.dart';
-import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'dart:math';
 
@@ -56,8 +55,12 @@ class _MainPageState extends State<MainPage> {
   }
 
   Future<AudioPlayer> playLocalAsset() async {
-    AudioCache cache = new AudioCache();
-    return await cache.play("rolling.mp3");
+    var player = AudioPlayer();
+    player.play(
+      AssetSource('rolling.mp3'),
+    );
+    // AudioCache cache = new AudioCache();
+    // return await cache.play("rolling.mp3");
   }
 
   void initState() {
